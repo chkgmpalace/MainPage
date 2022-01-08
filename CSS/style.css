@@ -1,3 +1,61 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+.dark{
+    background-color: #232326;
+    color: #F3F2F0;
+}
+.dark .nav-link{
+    color: #F3F2F0;
+}
+.light{
+    background-color: #F3F2F0;
+    color: #010101;
+}
+.light .nav-link{
+    color: #010101;
+}
+.name{
+    font-size: 28px;
+    line-height: 150%;
+}
+.title-h1{
+    font-size: 74px;
+    text-transform: uppercase;
+}
+.photo{
+    max-width: 100%;
+    margin-bottom: 118px;
+}
 .nav{
-    display: flex;;
+    padding-left: 0;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: #D40000;
+}
+.nav-item{
+    list-style-type: none;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.nav-item:first-child{
+    padding-left: 0;
+}
+.nav-item:last-child{
+    padding-right: 0;
 }
