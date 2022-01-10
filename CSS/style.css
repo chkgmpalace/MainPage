@@ -1,5 +1,6 @@
 body{
     font-family: 'Inter', sans-serif;
+    font-size: 14px;
 }
 header{
     display: flex;
@@ -32,6 +33,11 @@ header{
     font-size: 74px;
     text-transform: uppercase;
 }
+.title-h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 .photo{
     max-width: 100%;
     margin-bottom: 118px;
@@ -40,7 +46,7 @@ header{
     padding-left: 0;
     display: flex;
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 50px;   
 }
 .nav-link{
     text-decoration: none;
@@ -53,9 +59,46 @@ header{
     padding-left: 16px;
     padding-right: 16px;
 }
+.nav-info{
+    border-right: 1px solid rgba(243, 242, 240, 0.5);
+}
+.nav-info:last-child{
+    border: none;
+}
 .nav-item:first-child{
     padding-left: 0;
 }
 .nav-item:last-child{
     padding-right: 0;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    border-bottom: 1px solid #F3F2F0;
+    padding-bottom: 10px;
+}
+.project{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.project-img{
+    display: block;
+    width: 16px;
+    height: 12px;
+    background-image: url(../img/Arrow.svg);
+    margin-left: 15px;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.skill-item{
+    flex: 0 0 23%;
+}
+.skill .distruction{
+    line-height: 150%;
+    opacity: 0.8;
 }
