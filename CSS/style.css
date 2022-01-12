@@ -18,6 +18,12 @@ header{
 .dark .nav-link{
     color: #F3F2F0;
 }
+.dark .circle{
+    fill: #D40000;
+}
+.dark .triangle{
+    fill: #FFFFFF;
+}
 .light{
     background-color: #F3F2F0;
     color: #010101;
@@ -25,9 +31,24 @@ header{
 .light .nav-link{
     color: #010101;
 }
+.light .circle{
+    fill: #FFFFFF;
+}
+.light .triangle{
+    fill: #D40000;
+}
+.main{
+    position: relative;
+}
+.main .title-h1{
+    position: relative;
+    z-index: 4;
+}
 .name{
     font-size: 28px;
     line-height: 150%;
+    position: relative;
+    z-index: 3;
 }
 .title-h1{
     font-size: 74px;
@@ -47,7 +68,7 @@ header{
     display: flex;
     margin-top: 40px;
     margin-bottom: 50px;   
-}
+} 
 .nav-link{
     text-decoration: none;
 }
@@ -59,10 +80,10 @@ header{
     padding-left: 16px;
     padding-right: 16px;
 }
-.nav-info{
+.nav-social{
     border-right: 1px solid rgba(243, 242, 240, 0.5);
 }
-.nav-info:last-child{
+.nav-social:last-child{
     border: none;
 }
 .nav-item:first-child{
@@ -77,6 +98,10 @@ header{
     margin-top: 100px;
     border-bottom: 1px solid #F3F2F0;
     padding-bottom: 10px;
+}
+.social-item{
+    position: relative;
+    z-index: 1;
 }
 .project{
     margin-top: 40px;
@@ -100,5 +125,53 @@ header{
 }
 .skill .distruction{
     line-height: 150%;
+    opacity: 0.8;
+}
+.circle-main{
+    width: 253px;
+    height: 253px;
+    position: absolute;
+    left: -120px;
+    top: calc(50% - 126px);
+    z-index: 1;
+}
+.circle-nav{
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    top: calc(50% - 55px);
+    right: 25px;
+    z-index: -1;
+}
+.triangle{
+    position: absolute;
+    left: -151px;
+    top: -15px;
+    z-index: 1;
+}
+.section-steps{
+    padding-top: 180px;
+    padding-bottom: 198px;
+}
+.steps{
+    border-top: 1px solid #F3F2F0;
+}
+.steps:last-child{
+    border-bottom: 1px solid #F3F2F0;
+}
+.steps-item{
+    display: flex;
+    justify-content: space-between;
+    line-height: 150%;
+    align-items: center;
+}
+.steps-title{
+    font-size: 28px;
+}
+.steps-title span{
+    margin-right: 45px;
+}
+.steps-decription{
+    font-size: 16px;
     opacity: 0.8;
 }
