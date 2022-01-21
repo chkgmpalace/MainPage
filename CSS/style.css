@@ -100,6 +100,7 @@ header{
 } 
 .nav-link{
     text-decoration: none;
+    transition: 0.2s color ease;
 }
 .nav-link:hover{
     color: #D40000;
@@ -128,6 +129,12 @@ header{
     margin-top: 40px;
     display: flex;
     align-items: center;
+    transition: 0.2s border-bottom ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 11px;
+}
+.project:hover{
+    border-bottom: 2px solid #F3F2F0;
 }
 .project-img{
     display: block;
@@ -177,8 +184,8 @@ header{
     z-index: 1;
 }
 .section-steps{
-    padding-top: 175px;
-    padding-bottom: 198px;
+    padding-top: 140px;
+    padding-bottom: 140px;
 }
 .steps-item{
     display: flex;
@@ -238,4 +245,96 @@ header{
     grid-row: 3/4;
     grid-column: 4/5;
     padding: 65px 10px 10px 30px;
+}
+.portfolio{
+    margin-bottom: 145px;
+    position: relative;
+    z-index: 1;
+}
+.gradient{
+    background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%);
+}
+.section-portfolio{
+    position: relative;
+}
+.circle-portfolio{
+    width: 465px;
+    height: 465px;
+    position: absolute;
+    top: -330px;
+    left: 340px;
+}
+#tabs{
+    position: relative;
+}
+.nav-tabs{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    text-decoration: none;
+    position: absolute;
+    top: -60px;
+}
+.nav-tabs-item{
+    margin-right: 75px;
+}
+.nav-tabs-link{
+    padding-bottom: 21px;
+    text-decoration: none;
+    color: rgba(243, 242, 240, 0.5);
+    font-size: 16px;
+    line-height: 150%;
+    border-bottom: 2px solid transparent;
+}
+.nav-tabs-link.active{
+    color: #F3F2F0;
+    border-bottom: 2px solid #F3F2F0;
+}
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #F3F2F0;
+}
+.work-item{
+    flex: 0 0 49%;
+    
+}
+.work-title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+}
+.work-list{
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.8;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 70px;
+}
+.work-list-item{
+    margin-bottom: 15px;
+}
+.work-time{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.8;
+}
+.thober{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 315px;
+}
+.work-image{
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    transform: translate(50%,50%);
+    width: 100%;
+    height: 315px;
 }
