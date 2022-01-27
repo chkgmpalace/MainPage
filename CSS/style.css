@@ -432,7 +432,7 @@ header{
 }
 .tarif{
     display: grid;
-    grid-template: repeat(4, 1fr) /1fr 1fr;
+    grid-template: repeat(3, 1fr) /1fr 1fr;
 }
 .tarif-item{
     border-bottom: 1px solid #F3F2F0;
@@ -502,4 +502,68 @@ header{
 .tarif-item{
     position: relative;
     z-index: 1;
+}
+.form{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+.form-item{
+    padding-top: 60px;
+}
+.form-title{
+    font-size: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 1px solid #F3F2F0;
+}
+.form-description{
+    font-size: 28px;
+    border-bottom: 1px solid #F3F2F0;
+}
+form label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: #F3F2F0;
+}
+form input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 20px 23px;
+    background-color: #38383A;
+    border: none;
+    margin-bottom: 25px;
+}
+.form-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+form input:focus{
+    outline: none;
+}
+input[type="submit"]{
+    background-color: #D40000;
+    color: #F3F2F0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+.ui-selectmenu-button.ui-button{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #38383A;
+    padding: 24px 20px 23px;
+    color: #F3F2F0;
+    border: none;
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+.ui-menu .ui-menu-item-wrapper{
+    background-color: #38383A;
 }
